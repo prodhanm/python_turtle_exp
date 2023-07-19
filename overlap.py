@@ -1,14 +1,23 @@
 import turtle
 import tkinter as tk
 
-turtle.color("black")
+def square():
+    turtle.color("black")
 
-turtle.penup()
-turtle.goto(50, 50)
-turtle.pendown()
+    turtle.penup()
+    turtle.goto(100, -120)
+    turtle.pendown()
 
-for pen in range(4):
-    turtle.left(90)
-    turtle.forward(300)
+    for pen in range(4):
+        turtle.left(90)
+        turtle.forward(260)
+    
+square()
 
-turtle.exitonclick()
+def round():
+    turtle.color("blue")
+    turtle.circle(260)
+
+    turtle.exitonclick()
+
+round()
